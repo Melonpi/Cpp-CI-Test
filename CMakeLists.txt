@@ -16,7 +16,7 @@ elseif ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU")
     add_definitions(-std=c++11 -O3 -Wall -Wextra)
 endif()
 
-add_executable(exe ${src} ${test} ${include})
+add_executable(exe ${SRC_FILES} ${TEST_FILES} ${INC_FILES})
 target_link_libraries(exe ${Boost_UNIT_TEST_FRAMEWORK_LIBRARY})
 
 enable_testing()
